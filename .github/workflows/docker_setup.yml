@@ -54,7 +54,7 @@ jobs:
             echo "Docker images found in cache. Skipping build..."
           else
             echo "Docker images not found in cache. Building..."
-            docker-compose build
+            docker compose build
             # Push the newly built images to the desired location or registry
             docker push oppia-angular-build
           fi
